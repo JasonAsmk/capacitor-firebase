@@ -801,6 +801,11 @@ export enum Persistence {
    * @since 5.2.0
    */
   BrowserSession = 'BROWSER_SESSION',
+  /**
+   * Persistence used in conjuction with middleware to sync backend and front state.
+   * @since 8.0.0
+   */
+  BrowserCookie = 'BROWSER_COOKIE',
 }
 
 /**
@@ -1617,11 +1622,6 @@ export interface ActionCodeSettings {
    * Sets the link continue/state URL.
    */
   url: string;
-  /**
-   * When multiple custom dynamic link domains are defined for a project, specify which one to use
-   * when the link is to be opened via a specified mobile app (for example, `example.page.link`).
-   */
-  dynamicLinkDomain?: string;
 }
 
 export enum ProviderId {

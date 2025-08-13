@@ -499,6 +499,9 @@ export class FirebaseAuthenticationWeb
       case Persistence.InMemory:
         await setPersistence(auth, inMemoryPersistence);
         break;
+      // case Persistence.BrowserCookie:
+      //   await setPersistence(auth, browserCookiePersistence);
+      //   break;
     }
   }
 
